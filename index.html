@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&family=Roboto+Mono:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
 </head>
 <body class="example">
+    
     <header>
         <div class="container">
             <nav>
@@ -19,45 +20,22 @@
                     <div class="nav-left-container">
                         <div class="logo-box"><p id="logo">DKS</p></div>
                     </div>
-                    <div class="nav-right-container">
+                    <a href="#" id="open" onclick="myfun()"><i class="fa-solid fa-bars"></i></a>
+                    <div class="nav-right-container list">
                         <div class="box"><p><a href="#">Home</a></p></div>
                         <div class="box"><p><a href="#about_main_section">About</a></p></div>
                         <div class="box"><p><a href="#project">Project</a></p></div>
                         <div class="box"><p><a href="#contact">Contact Me</a></p></div>
                     </div>
-                    <div class="box login-box"><p><a href="login.html" target="_blank">login</a></p></div>
+                    <div class="box login-box"><p><a href="login.html" target="_blank"></a></p></div>
                 </div>
             </nav>
             <div id="About_me_container">
                 <div class="About_me_body_container">
                     <div class="About_me_left_container">
                         <div class="About_me_para">
-                            <div class="name_id"><p>I'm</p><p id="auto-text"></p></div>
-                            <div class="auto-typed-box"><h1><span id="auto-typed"></span></h1></div>
-                        </div>
-                        <div class="about-icon-box">
-                            <ul>
-                                <li class="icon">
-                                    <i class="fa-brands fa-linkedin-in"style="color: #4078c0;" ></i>
-                                </li>
-                                <li class="icon">
-                                    <i class="fa-brands fa-github" style="color: #4078c0;"></i>
-                                </li >
-                                <li class="icon">
-                                    <i class="fa-brands fa-facebook-f" style="color: #4267B2;"></i>
-                                </li>
-                                <li class="icon">
-                                    <i class="fa-brands fa-instagram" style="color: #eb0b0b;"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="buttonbox">
-                            <button class="icon" type="button" >Download My Resume</button>
-                        </div>
-                    </div>
-    
-                    <div class="About_me_right_container">
-                        <div class="image_box_container">
+                            <div class="name_id"><h2>Welcome to my portfoilo</h1></div>
+                            <div class="name_id"><p>I'm</p><p id="auto-text"><span style="color: rgb(0, 255, 251)">Dinesh</span> Kumar Singh</p></div>
                         </div>
                     </div>
                 </div>
@@ -67,90 +45,164 @@
 
     <main>
         <section id="about_main_section" class="container2">
-            <div class="about-text"><sapn>About</sapn></div>
+            <div class="about-text"><sapn>About Me</sapn></div>
                 <div class="about-section-container ">
-                    <div class="about-left-section">
-                        <div class="about-paragraph-section About_me_left_container">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, aliquam. Consequatur ratione reiciendis mollitia, iusto consequuntur modi, tempore nostrum nobis debitis earum magni praesentium sed minima illum ipsum. Praesentium, officia?
-                            Sed dolore illum, error repellat vero iusto quod molestiae ad similique commodi alias quos repellendus quae deleniti aliquid reiciendis veniam temporibus dignissimos sit! Nihil vel excepturi dignissimos officia provident quos!
-                            Dolorum quibusdam ipsum modi? Aspernatur maxime labore minus. Consequuntur dolor temporibus tenetur totam iusto, vel hic beatae natus iste. Tenetur voluptatem explicabo assumenda eos natus molestias rerum ducimus! Unde, beatae.
-                            Amet debitis ex sunt, quo ipsa placeat sapiente delectus iure, corrupti dolorem facilis voluptate unde id voluptas ad accusamus. Magni corporis libero consequuntur soluta, laboriosam maxime fugiat aliquam aut quis?
-                            At laborum veniam, sapiente, eligendi cumquefugit aspernatur vel accusamus eos porro. Tempore sunt nemo voluptatem, iure officiis facilis! Adipisci, reprehenderit itaque eveniet ipsum dolores dicta iure provident rerum quas.
-                        </div>
-                    </div>
                     <div class="about-right-section About_me_right_container">
-                        <div class="image-section image_box_container"></div>
+                        <div class="image-section image_box_container"><img src="./image/myimage.png" /></div>
                     </div>
+                    <div class="about-left-section">
+                        <div class="about-paragraph-section ">
+                            <p>
+                                I am a 3rd year IT student and am looking for SDE Internship.
+                                I have strong command on DSA as well as in web development.
+                            <br/> <br/>
+                                I have solved 400+ DSA questions at different online plateform.
+                            </p>
+                        </div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                            <p class="tab-links" onclick="opentab('profile',event)">Profile</p>
+                        </div>
+                        <!-- <div class="skills-educations-section"> -->
+                            <div class="contents skills active-tab" id="skills">
+                                <ul>
+                                    <li><span>Languages <br></span>C, Java, CSS, HTML, Javascript</li>
+                                    <li><span>Developer tools <br></span>VS Code, IntelliJ IDEA, PyCharm</li>
+                                    <li><span>Data base <br></span>MySql, Mongodb</li>
+                                    <li><span>Others <br></span>Oops in java, DBMS</li>
+                                </ul>
+                            </div>
+
+                            <div class="contents education" id="education">
+                                <ul>
+                                    <li><span>2021-25 <br></span>B.E in Information Technology University Institute Of Technology,The University Of Burdwan</li>
+                                    <li><span>2017-19 <br></span>12th, Sri Radha Krishana Project High School Chitadhi</li>
+                                    <li><span>2017 <br></span>10th, Sri Radha Krishana Project High School Chitadhi</li>
+                                </ul>
+                            </div>
+                            <div class="contents profile" id="profile">
+                                <ul>
+                                    <li>
+                                        <a href="https://leetcode.com/u/Dine_09kau/" target="_blank"><span class="icon">Leetcode</span></a>
+                                        <!-- <i class="fa-brands fa-facebook-f" style="color: #4267B2;"></i> -->
+                                    </li>
+                                    <li>
+                                        <a href="https://www.geeksforgeeks.org/user/applicatiox6rh/" target="_blank"><span class="icon">gfg</span></a>
+                                        <!-- <i class="fa-brands fa-instagram" style="color: #eb0b0b;"></i> -->
+                                    </li>
+                                    <li>
+                                        <a href="https://in.linkedin.com/in/dinesh-kumar-singh-17546322b" target="_blank"><span class="icon">Linkedin</span></a>
+                                        <!-- <i class="fa-brands fa-linkedin-in icon"style="color: #4078c0;" ></i> -->
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/Dinesh870" target="_blank"><span class="icon">github</span></a>
+                                        <!-- <i class="fa-brands fa-github" style="color: #4078c0;"></i> -->
+                                    </li >
+                                    
+                                </ul>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                   
                 </div>
         </section> 
 
         <section id="project" class="container3">
             <div class="all-projects-heading"><span>projects</span></div>
             <div class="project-section">
-                <div class="project-box">
-                    <div class="project-box-name">
-                        <div class="project-name"><h1>calculator</h1></div>
-                        <div class="project-para"><h5><p>Lorem ipsum, <br>Lorem ipsum,</p></h5></div>
-                        <div class="icon-box"><a href="https://dinesh870.github.io/Calculator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                <div class="project-box show-project">
+                    <div class="project-box-name project-box1">
+                        <div class="overlay">
+                            <div class="project-name overlay-text"><h1>calculator</h1></div>
+                            <div class="project-para overlay-text"><h5><p>Html, CSS, Javascript - Project</p></h5></div>
+                            <div class="icon-box overlay-text"><a href="https://dinesh870.github.io/Calculator/" target="_blank"><abbr title="try it"><i class="fa-solid fa-arrow-up-right-from-square"></i></abbr></a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-box">
-                    <div class="project-box-name">
-                        <div class="project-name"><h1>ToDo List</h1></div>
-                        <div class="project-para"><h5><p>Lorem ipsum, <br>Lorem ipsum,</p></h5></div>
-                        <div class="icon-box"><a href="https://dinesh870.github.io/Todolist/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                <div class="project-box show-project">
+                    <div class="project-box-name project-box2">
+                        <div class="overlay">
+                            <div class="project-name overlay-text"><h1>ToDo List</h1></div>
+                            <div class="project-para overlay-text"><h5><p>Html, CSS, Javascript - Project</p></h5></div>
+                            <div class="icon-box overlay-text"><a href="https://dinesh870.github.io/Todolist/" target="_blank"><abbr title="try it"><i class="fa-solid fa-arrow-up-right-from-square"></i></abbr></a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-box">
-                    <div class="project-box-name">
-                        <div class="project-name"><h1>Tic Tac Toe</h1></div>
-                        <div class="project-para"><h5><p>Lorem ipsum, <br>Lorem ipsum,</p></h5></div>
-                        <div class="icon-box"><a href="https://dinesh870.github.io/tictactoegame/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                <div class="project-box hide-project">
+                    <div class="project-box-name project-box3">
+                        <div class="overlay">
+                            <div class="project-name overlay-text"><h1>Tic Tac Toe</h1></div>
+                            <div class="project-para overlay-text"><h5><p>Html, CSS, Javascript - Project</p></h5></div>
+                            <div class="icon-box overlay-text"><a href="https://dinesh870.github.io/tictactoegame/" target="_blank"><abbr title="try it"><i class="fa-solid fa-arrow-up-right-from-square"></i></abbr></a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-box">
-                    <div class="project-box-name">
-                        <div class="project-name"><h1>Guess Number</h1></div>
-                        <div class="project-para"><h5><p>Lorem ipsum, <br>Lorem ipsum,</p></h5></div>
-                        <div class="icon-box"><a href="https://dinesh870.github.io/guessnumbergame/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                <div class="project-box hide-project">
+                    <div class="project-box-name project-box4">
+                        <div class="overlay">
+                            <div class="project-name overlay-text"><h1>Guess Number</h1></div>
+                            <div class="project-para overlay-text"><h5><p>Html, CSS, Javascript - Project</p></h5></div>
+                            <div class="icon-box overlay-text"><a href="https://dinesh870.github.io/guessnumbergame/" target="_blank"><abbr title="try it"><i class="fa-solid fa-arrow-up-right-from-square"></i></abbr></a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-box">
-                    <div class="project-box-name">
-                        <div class="project-name"><h1>calculator</h1></div>
-                        <div class="project-para"><h5><p>Lorem ipsum, <br>Lorem ipsum,</p></h5></div>
-                        <div class="icon-box"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+
+                <div class="project-box hide-project">
+                    <div class="project-box-name project-box5">
+                        <div class="overlay">
+                            <div class="project-name overlay-text"><h1>Portfolio</h1></div>
+                            <div class="project-para overlay-text"><h5><p>Html, CSS, Javascript - Project</p></h5></div>
+                            <div class="icon-box overlay-text"><a href="#"><abbr title="try it"><i class="fa-solid fa-arrow-up-right-from-square"></i></abbr></a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-box">
-                    <div class="project-box-name">
-                        <div class="project-name"><h1>calculator</h1></div>
-                        <div class="project-para"><h5><p>Lorem ipsum, <br>Lorem ipsum,</p></h5></div>
-                        <div class="icon-box"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                <!-- <div class="project-box hide-project">
+                    <div class="project-box-name project-box6">
+                        <div class="overlay">
+                            <div class="project-name overlay-text"><h1>calculator</h1></div>
+                            <div class="project-para overlay-text"><h5><p>Lorem ipsum, <br>Lorem ipsum,</p></h5></div>
+                            <div class="icon-box overlay-text"><a href="#"><abbr title="try it"><i class="fa-solid fa-arrow-up-right-from-square"></i></abbr></a></div>
+                        </div>
                     </div>
-                </div>
+                </div> -->
+            
             </div>
+            <button type="button" class="button button1" id="showmore">show more</button>
         </section>
 
         <section id="contact" class="container4">
-            <div class="contact-text"><span>Contact me</span></div>
-            <div class="contact-section">
-                <div class="contact-name-section">
-                    <div class="button-text-box">
-                        <div class="contact-name-box input-box">
-                            <input type="text" name="" id="" placeholder=" Full Name">
-                            <input type="number" name="" id="" placeholder="Mobile number">
-                        </div>
-                        <div class="contact-gmail-box input-box">
-                            <input type="email" name="" id="" placeholder="Email Address">
-                            <input type="text" name="" id="" placeholder="Subject">
-                        </div>
-                        <div class="question-text-box"><textarea name="" id="" cols="40" rows="15" placeholder="write"></textarea></div>
+            <div class="contact-info">
+                <div class="sub-contact-info">
+                    <div class="sub-contact-info-email sub-contact-info-common">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>dksmaurya09@gmail.com</span>
                     </div>
-                    <div class="submit-button"><button type="submit">Submit</button></div>
+                    <div class="sub-contact-info-mobile sub-contact-info-common">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>1234567890</span>
+                    </div>
+                    
                 </div>
             </div>
+            <div class="contact-section">
+                <div class="contact-text"><span>Contact me</span></div>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-name-section">
+                    <input type="hidden" name="access_key" value="2a208dd5-50ec-47f3-a2b4-c7c715ddfa5d">
+                    <div class="contact-name-box input-box">
+                        <input type="text" name="name" id="" placeholder=" Full Name">
+                    </div>
+                    <div class="contact-gmail-box input-box">
+                        <input type="email" name="email" id="" placeholder="Email Address" required>
+                    </div>
+                    <div class="question-text-box">
+                        <textarea name="message" id="" cols="40" rows="10" placeholder="write" required></textarea>
+                    </div>
+                    <button type="submit" class="button button1 submit-button">Submit</button>
+                </form>
+            </div>
         </section>
+    
     </main> 
 
     <footer>
@@ -160,10 +212,15 @@
                 <div class="center_footer_box">
                     <div class="mid_footer_box">
                         <h3>About</h3>
-                        <a href="#">About us</a>
-                        <a href="#">Contact Us</a>
+                        <a href="#about_main_section">About us</a>
+                        <a href="#contact">Contact Us</a>
                         <a href="#">Sign In</a>
                         <a href="#">Help</a>
+                    </div>
+                    <div class="resume">
+                        <a href="https://online.publuu.com/583787/1310207" target="_blank">
+                            <button class="button button1" id="download-resume">Download My Resume</button>
+                        </a>
                     </div>
                 </div>
                 <div class="footer_bottom_box">
