@@ -332,9 +332,9 @@ a {
 .project-box6 {
     background-image: url(./image/hindijokes.jpeg);
 }
-.project-box7 {
+/* .project-box7 {
     background-image: url(./image/solvehive.png);
-}
+} */
 .project-box-name::before {
     content: "";
     border-radius: 20px;
