@@ -327,10 +327,13 @@ a {
     background-image: url(./image/guess-the-number.png);
 }
 .project-box5 {
-    background-image: url(./image/calculator.jpg);
+    background-image: url(./image/portfolio.png);
 }
 .project-box6 {
-    background-image: url(./image/calculator.jpg);
+    background-image: url(./image/hindijokes.jpeg);
+}
+.project-box7 {
+    background-image: url(./image/solvehive.png);
 }
 .project-box-name::before {
     content: "";

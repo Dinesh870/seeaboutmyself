@@ -1,65 +1,10 @@
-
-// let element = document.getElementById('auto-text');
-// let text = "dinesh kumar singh"
-// let i = 0;
-// setInterval(()=>{
-//     if(i < text.length) {
-//         element.innerHTML += text.charAt(i);
-//         i++;
-//     }
-// },200);
-
-// const typed = new Typed("#auto-typed",{
-//     strings: ["DSA learner","web developer"],
-//     typeSpeed: 190,
-//     backSpeed: 60,
-//     loop: true
-// });
-
-
 // responsive navbar
 let bar = document.getElementById('open');
 
 function myfun() {
     let listbox = document.querySelector('.nav-right-container');
     listbox.classList.toggle('list');
-    // console.log(listbox);
-    // if(listbox.style.display === 'none'){
-    //     listbox.style.display = 'block';
-    // } else {
-    //     listbox.style.display = 'none';
-    // }
 }
-
-
-
-const skills = {
-        "languages": "C, Java, CSS, HTML, Javascript",
-        "developertools": "VS Code, IntelliJ IDEA, PyCharm",
-        "database": " MySql, Mongodb",
-        "others": "Oops in java, DBMS"
-    }
-
-const education = [
-    {
-        "class": "B.E.",
-        "session": "2017-2019",
-        "schoolname": "sri radha krishana project high school chitadhi",
-        "stream": "Information Technology",
-    },
-    {
-        "class": "10th",
-        "session": "2017-2019",
-        "schoolname": "sri radha krishana project high school chitadhi",
-        "stream": "Science, PCM",
-    },
-    {
-        "class": "10th",
-        "session": "2017-2019",
-        "schoolname": "sri radha krishana project high school chitadhi",
-        "stream": "",
-    }    
-];
 
 const tablinks = document.getElementsByClassName("tab-links");
 const activetab = document.getElementsByClassName('contents');
@@ -76,7 +21,6 @@ function opentab(clickedtabId,event) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(clickedtabId).classList.add('active-tab');
 }
-
 
 // show more and show less button for project
 let allprojects = document.getElementsByClassName("project-box");
